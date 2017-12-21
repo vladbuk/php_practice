@@ -1,0 +1,4 @@
+#div1 {
+    display: grid;
+    grid-auto-columns: 33%;
+}
