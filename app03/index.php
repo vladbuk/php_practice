@@ -44,30 +44,37 @@ $products = [
     ],
 ];
 
+function map($items, $func) {
+    $results = [];
 
-// Задача: получить коллекцию / список емейлов
+    foreach ($items as $item) {
+        $results[] = $func($item);
+    }
 
-$emails = [];
-
-foreach ($users as $user) {
-    $emails[] = $user["email"];
+    return $results;
 }
 
-// Задача: получить коллекцию / список имен
-$names = [];
 
-foreach ($users as $user) {
-    $names[] = $user["name"];
-}
+// Получить коллекцию / список емейлов
 
-// Задача: получить коллекцию / список товаров
-$finalProducts = [];
+$emails = map($users, function($user) {
+    return $user["email"];
+});
 
-foreach ($products as $product) {
-    $finalProducts[] = [
+
+// Получить коллекцию / список имен
+$names = map($users, function($user) {
+    return $user["name"];
+});
+
+
+// Получить коллекцию / список товаров
+$finalProducts = map($products, function($product) {
+    return [
         "title" => $product["product_title"],
         "price" => $product["product_price"]
     ];
-}
+});
+
 
 var_dump($emails, $names, $finalProducts);
