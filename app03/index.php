@@ -44,7 +44,16 @@ $products = [
     ],
 ];
 
-function map($items, $func) {
+/**
+ * Function map
+ *
+ * @param [array] $items
+ * @param [anonymouse function] $func
+ *  
+ * @return array
+ */
+function map($items, $func) 
+{
     $results = [];
 
     foreach ($items as $item) {
@@ -57,24 +66,30 @@ function map($items, $func) {
 
 // Получить коллекцию / список емейлов
 
-$emails = map($users, function($user) {
-    return $user["email"];
-});
+$emails = map(
+    $users, function ($user) {
+        return $user["email"];
+    }
+);
 
 
 // Получить коллекцию / список имен
-$names = map($users, function($user) {
-    return $user["name"];
-});
+$names = map(
+    $users, function ($user) {
+        return $user["name"];
+    }
+);
 
 
 // Получить коллекцию / список товаров
-$finalProducts = map($products, function($product) {
-    return [
-        "title" => $product["product_title"],
-        "price" => $product["product_price"]
-    ];
-});
+$finalProducts = map(
+    $products, function ($product) {
+        return [
+            "title" => $product["product_title"],
+            "price" => $product["product_price"]
+        ];
+    }
+);
 
 
 var_dump($emails, $names, $finalProducts);
