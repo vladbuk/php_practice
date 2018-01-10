@@ -7,9 +7,11 @@
     <title>PHP apps index page</title>
 </head>
 <body>
-    <a href="app01/">app01</a><br>
-    <a href="app02/">app02</a><br>
-    
-   
+    <a href="01/">exercise01</a><br>
+    <a href="02/">exercise02</a><br>
+    <a href="03/">exercise03</a><br>
+    <a href="04/">exercise04</a><br>
+
+
 </body>
 </html>
