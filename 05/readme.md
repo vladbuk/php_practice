@@ -2,4 +2,4 @@
 
 ### ПХП ООП
 
-Практика по видео [докам](http://php.net/manual/ru/language.oop5.php)
+Практика [докам](http://php.net/manual/ru/language.oop5.php)
