@@ -5,3 +5,4 @@
 * 02 - CSS grid test
 * 03 - Map function inside
 * 04 - Filter an Reject function inside
+* 05 - PHP OOP intro
