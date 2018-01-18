@@ -19,4 +19,4 @@ echo \NS\ClassConst::MAXWEIGHT;
 $cs = new \NS\ClassConst();
 
 $cs->showConst();
-$cs::AGE;
+// $cs::AGE;
