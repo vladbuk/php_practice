@@ -11,7 +11,6 @@ class Subclass extends Parentclass
 			$this->datastring = (string)$string;
 		} else {
 			throw new \Exception("Error: not string type", 1);
-			
 		}
 	}
 }
