@@ -3,7 +3,7 @@
 namespace Index;
 
 spl_autoload_register(function($classname) {
-	require_once $classname . ".php";
+    require_once __DIR__ . '/' . str_replace('\\', '/', $classname) . ".php";
 });
 
 $myObj = new \Classes\Parentclass("parent string");

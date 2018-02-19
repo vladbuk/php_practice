@@ -2,10 +2,10 @@
 
 namespace Index;
 
-set_include_path(realpath('Classes') . PATH_SEPARATOR . get_include_path());
+//set_include_path(realpath('Classes') . PATH_SEPARATOR . get_include_path());
 
 spl_autoload_register(function($classname) {
-	require_once $classname . ".php";
+    require_once __DIR__ . '/' . str_replace('\\', '/', $classname) . ".php";
 });
 
 $obj1 = new \Classes\Parentclass();
