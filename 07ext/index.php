@@ -2,6 +2,9 @@
 
 namespace Index;
 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 //set_include_path(realpath('Classes') . PATH_SEPARATOR . get_include_path());
 
 spl_autoload_register(function($classname) {
